@@ -24,7 +24,7 @@
 1. **Clone** the repository or download the project ZIP.
 2. Open **Unity Hub**, and click **"Add"** to select the project folder.
 3. Ensure you're using **Unity 6**.
-4. Open the `MainScene` (or your core test scene).
+4. Open the `Studio Introduction` (or your core test scene).
 5. Press **Play** in the Unity Editor to test the game.
 
 > ⚠️ **Note**: Some assets or scripts may still be under development. Use Play mode in a test scene if the main scene throws errors.
