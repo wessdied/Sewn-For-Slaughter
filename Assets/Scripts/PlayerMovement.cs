@@ -305,5 +305,5 @@ public class PlayerMovement : MonoBehaviour
     {
         return stamina.CurrentStamina >= amount;
     }
-   
+
 }
