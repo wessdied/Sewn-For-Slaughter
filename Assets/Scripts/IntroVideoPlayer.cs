@@ -32,6 +32,6 @@ public class IntroVideoPlayer : MonoBehaviour
     void OnVideoFinished(VideoPlayer vp)
     {
         Debug.Log("Video finished — loading next scene.");
-        SceneManager.LoadScene("Lobby Scene");
+        SceneManager.LoadScene("Main Menu");
     }
 }

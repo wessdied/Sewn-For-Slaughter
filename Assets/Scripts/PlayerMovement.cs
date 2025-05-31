@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     public float RayCastLength = 1.2f;
     public float RayCastStartPosition = -1f;
     //References
-    private Rigidbody BearBody;
+    private Rigidbody PlayerBody;
     float HorizontalInput;
     float VerticalInput;
     Vector3 MovementDirection;
@@ -71,8 +71,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         stamina = new Stamina(100); // Example max stamina value
-        BearBody = GetComponent<Rigidbody>();
-        BearBody.freezeRotation = true;
+        PlayerBody = GetComponent<Rigidbody>();
+        PlayerBody.freezeRotation = true;
         ReadyToJump = true;
         StartYScale = transform.localScale.y;
     }
@@ -91,19 +91,19 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        BearInput();
-        BearWalkSpeed();
+        PlayerInput();
+        PlayerWalkSpeed();
         StateHandler();
 
 
         //Handle Drag
         if (Grounded)
         {
-            BearBody.linearDamping = GroundDrag;
+            PlayerBody.linearDamping = GroundDrag;
         }
         else
         {
-            BearBody.linearDamping = 0f;
+            PlayerBody.linearDamping = 0f;
         }
 
         if (State == MovementState.Running)
@@ -124,9 +124,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        BearMovement();
+        PlayerMotion();
     }
-    private void BearInput()
+    private void PlayerInput()
     {
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
@@ -135,7 +135,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(Jump) && ReadyToJump && Grounded && stamina.CurrentStamina > 10f)
         {
             ReadyToJump = false;
-            BearJump();
+            PlayerJump();
             stamina.DecreaseStamina(15f);
             Invoke(nameof(ResetJump), JumpCoolDown);
         }
@@ -144,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(Crawl))
         {
             transform.localScale = new Vector3(transform.localScale.x, CrawlYScale, transform.localScale.z);
-            BearBody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
+            PlayerBody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
         //Stop Crawling
         if (Input.GetKeyUp(Crawl))
@@ -154,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private void BearMovement()
+    private void PlayerMotion()
     {
         //Calculate Movement Direction
         MovementDirection = Orientation.forward * VerticalInput + Orientation.right * HorizontalInput;
@@ -162,11 +162,11 @@ public class PlayerMovement : MonoBehaviour
         //On Slope
         if (OnSlope())
         {
-            BearBody.AddForce(GetSlopeMovementDirection() * MovementSpeed * 20f, ForceMode.Force);
+            PlayerBody.AddForce(GetSlopeMovementDirection() * MovementSpeed * 20f, ForceMode.Force);
 
-            if (BearBody.linearVelocity.y > 0)
+            if (PlayerBody.linearVelocity.y > 0)
             {
-                BearBody.AddForce(Vector3.down * 80f, ForceMode.Force);
+                PlayerBody.AddForce(Vector3.down * 80f, ForceMode.Force);
             }
 
         }
@@ -174,51 +174,51 @@ public class PlayerMovement : MonoBehaviour
         //On The Ground
         else if (Grounded)
         {
-            BearBody.AddForce(MovementDirection.normalized * MovementSpeed * 5f, ForceMode.Force);
+            PlayerBody.AddForce(MovementDirection.normalized * MovementSpeed * 5f, ForceMode.Force);
         }
         //In The Air
         else if (!Grounded)
         {
-            BearBody.AddForce(MovementDirection.normalized * MovementSpeed * 5f * AirMultiplier, ForceMode.Force);
+            PlayerBody.AddForce(MovementDirection.normalized * MovementSpeed * 5f * AirMultiplier, ForceMode.Force);
         }
         //Turn Off Gravity On Slopes
-        BearBody.useGravity = !OnSlope();
+        PlayerBody.useGravity = !OnSlope();
 
     }
 
-    private void BearWalkSpeed()
+    private void PlayerWalkSpeed()
     {
         //Slope Speed Limit
         if (OnSlope() && !ExitingSlope)
         {
-            if (BearBody.linearVelocity.magnitude > MovementSpeed)
-                BearBody.linearVelocity = BearBody.linearVelocity.normalized * MovementSpeed;
+            if (PlayerBody.linearVelocity.magnitude > MovementSpeed)
+                PlayerBody.linearVelocity = PlayerBody.linearVelocity.normalized * MovementSpeed;
         }
         //limiting speed on ground
         else
         {
 
-            Vector3 flatvel = new Vector3(BearBody.linearVelocity.x, 0f, BearBody.linearVelocity.z);
+            Vector3 flatvel = new Vector3(PlayerBody.linearVelocity.x, 0f, PlayerBody.linearVelocity.z);
 
             if (flatvel.magnitude > MovementSpeed)
             {
                 Vector3 limitedVel = flatvel.normalized * MovementSpeed;
-                BearBody.linearVelocity = new Vector3(limitedVel.x, BearBody.linearVelocity.y, limitedVel.z);
+                PlayerBody.linearVelocity = new Vector3(limitedVel.x, PlayerBody.linearVelocity.y, limitedVel.z);
             }
 
         }
 
     }
 
-    private void BearJump()
+    private void PlayerJump()
     {
 
         ExitingSlope = true;
 
         //Reset Y Velocity
-        BearBody.linearVelocity = new Vector3(BearBody.linearVelocity.x, 0f, BearBody.linearVelocity.z);
+        PlayerBody.linearVelocity = new Vector3(PlayerBody.linearVelocity.x, 0f, PlayerBody.linearVelocity.z);
 
-        BearBody.AddForce(transform.up * JumpHeight, ForceMode.Impulse);
+        PlayerBody.AddForce(transform.up * JumpHeight, ForceMode.Impulse);
     }
 
     private void ResetJump()
