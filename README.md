@@ -1,15 +1,15 @@
-# 🧸 Sewn-For-Slaughter
+# Sewn-For-Slaughter
 
 **All rights reserved.**
 
-**Sewn-For-Slaughter** is a work-in-progress Unity horror indie game where teddy bear bounty hunters track down monsters in a stitched-together nightmare world.
+**Sewn-For-Slaughter** is a work-in-progress Unity horror indie game where sewn together bounty hunters track down monsters in a nightmare world.
 
 ---
 
 ##  Features
-- Custom teddy bear character models (created in Blender)
+- Custom 3D character models (created in Blender)
 - Stamina UI system
-- Modular level design (in progress) for scalable environments
+- Modular level design for scalable environments
 
 ---
 
@@ -20,7 +20,7 @@
 
 ---
 
-##  How to Run
+##  How to Run (Currently Down For Redesign! DO NOT RUN. )
 1. **Clone** the repository or download the project ZIP.
 2. Open **Unity Hub**, and click **"Add"** to select the project folder.
 3. Ensure you're using **Unity 6**.
