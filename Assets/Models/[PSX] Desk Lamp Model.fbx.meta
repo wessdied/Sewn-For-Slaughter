@@ -7,12 +7,12 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Lamp Base
-    second: {fileID: 2100000, guid: 50f3249bc26d5474f893962917de6ed3, type: 2}
+      name: Lamp Base.001
+    second: {fileID: 2100000, guid: 165463e2f100dd943ac5f4b3c036bb34, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Lamp Shade
+      name: Lamp Shade.001
     second: {fileID: 2100000, guid: 50f3249bc26d5474f893962917de6ed3, type: 2}
   materials:
     materialImportMode: 2
