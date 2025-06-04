@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &64348902
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 484.43277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8355106
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 532.63464
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.021960238
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99975884
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -177.483
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
+      propertyPath: m_Name
+      value: '[PSX] Nightstand Model'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7db7489d8ebc2e4bbaf08653fdde322, type: 3}
 --- !u!1 &138508647
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,11 +207,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 975704554}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &509231834 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-  m_PrefabInstance: {fileID: 412768727553087411}
-  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &728632115
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 484.615
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.257
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 532.676
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.021960238
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99975884
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -177.483
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_Name
+      value: '[PSX] Desk Lamp Model'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5958438921693756439, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
+      propertyPath: m_Range
+      value: 0.7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9bb72c2b9caf1fa43bdd7ad668818ee1, type: 3}
 --- !u!1 &813542602
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,8 +298,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1486846423}
-  - {fileID: 1166459206}
-  - {fileID: 509231834}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816796054
@@ -353,11 +464,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!4 &1166459206 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-  m_PrefabInstance: {fileID: 5213834110273355181}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1486846422
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,120 +893,6 @@ MonoBehaviour:
   bobSmoothing: 4
   player: {fileID: 975704554}
   playerMovement: {fileID: 975704555}
---- !u!1001 &412768727553087411
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 813542603}
-    m_Modifications:
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.302765
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.2435106
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.3064575
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.0000029504295
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081853022815260659, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6858073715699766601, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
-      propertyPath: m_Name
-      value: '[PSX] Desk Lamp Model'
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 31b52a4eb0f0b8f4a8c146ee9b2299ba, type: 3}
---- !u!1001 &5213834110273355181
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 813542603}
-    m_Modifications:
-    - target: {fileID: 2609654849665729761, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_Name
-      value: '[PSX] Nightstand Model'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.358246
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6955106
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.129883
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.0000020712612
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0000020787118
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071069
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3421763674535353947, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fcb4d831bfba8fd4a97833dcdb30123d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -908,3 +900,5 @@ SceneRoots:
   - {fileID: 975704554}
   - {fileID: 1572017881}
   - {fileID: 813542603}
+  - {fileID: 64348902}
+  - {fileID: 728632115}

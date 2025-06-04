@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 0cf1b9ac0e51d834fb030e88498ed319
+guid: d7db7489d8ebc2e4bbaf08653fdde322
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lamp Base
-    second: {fileID: 2100000, guid: 50f3249bc26d5474f893962917de6ed3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lamp Shade
-    second: {fileID: 2100000, guid: 50f3249bc26d5474f893962917de6ed3, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
