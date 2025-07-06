@@ -3,7 +3,17 @@ guid: c16cc46c491852442957d8e9a03f0578
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wess_Body.001
+    second: {fileID: 2100000, guid: fca642a48efc5f74ba68147820be5668, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wess_Head.002
+    second: {fileID: 2100000, guid: baa1561668f775c4892321e6a0a4893d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
